@@ -1,0 +1,460 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homePageContainer {
+  height: 100vh;
+}
+
+/* Header Nav Container */
+
+.headerNavContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 10vh;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurantName {
+  margin-left: 3em
+}
+
+.restaurantName a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #E8750B;
+  letter-spacing: 0.1em;
+}
+
+.headerNavList {
+  list-style: none;
+  display: flex;
+  line-height: 70px;
+}
+
+.headerNavList li {
+  position: relative;
+  color: #343434;
+  font-size: 1.2em;
+  margin-right: 2em;
+}
+
+.headerNavList li:after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 0;
+  height: 4px;
+  background-color: #343434;
+  transition: 350ms all;
+}
+
+.headerNavList li:hover:after {
+  width: 100%;
+}
+
+.headerNavList li a{
+  text-decoration: none;
+  color: #343434;
+  font-size: 1.2em;
+}
+
+/* Section | Background Image  */
+
+.imgContentPromotion {
+  height: 60vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  background-image: url('../img/background\ image.png');
+  padding-left: 3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgContentPromotion h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFDC26;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2em;
+  font-size: 3.5em;
+}
+
+.imgContentPromotion p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F6F6F6;
+  font-size: 1.5em;
+  margin-bottom: 6em;
+}
+
+/* Section | Rezervation Content */
+
+.reservationContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+
+.reservationContent p {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.reservationContent a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  width: 15em;
+  padding: 0.83rem 3rem;
+  border: 1px solid #E8750B;
+  border-radius: 10px;
+  color: #E8750B;
+}
+
+.reservationContent a:hover{
+  background-color: #e49348;
+  color: #F6F6F6;
+}
+
+/* aboutme css start part */
+
+.aboutmeSectionContainer {
+  height: 100vh;
+  background-color: #113C4A;
+}
+
+.chefPromotionName {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+  padding-top: 3em;
+  color: #fff;
+}
+
+.chefPromotionName h1{
+  position: relative;
+  font-size: 3.5em;
+  font-weight: 300;
+}
+
+.chefPromotionName h1:after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 350ms all;
+}
+
+.chefPromotionName h1:hover:after {
+  width: 100%;
+}
+
+.masterChefName {
+  color: #343434;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.chefNameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2em;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: #0BC0E8;
+  color: #fff;
+  width: 400px;
+  height: 700px;
+  background-color: #113C4A;
+}
+
+.chefNameBox h5{
+  margin-top: 0.8em;
+  color: #C6BFB9;
+}
+
+.chefNameBox h3{
+  margin-top: 0.8em;
+  color: #0BC0E8;
+}
+
+.chefNameBox p{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 2em;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.chefNameBox img{
+  margin-bottom: 30px;
+  width: 150px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #0BC0E8;
+}
+
+/*  */
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #113C4A;
+  height: 100vh;
+}
+
+.contactSection .ContactContentFormTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5em;
+  padding-top: 100px;
+}
+
+.contactSection .ContactContentFormTitle h4 {
+  color: #fff;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.contactSection .ContactContentFormTitle form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contactSection .ContactContentFormTitle input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30em;
+  height: 2.5em;
+  border-radius: 1em;
+  margin-bottom: 3em;
+  margin-top: 1em;
+}
+
+.contactSection .ContactContentFormTitle textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1em;
+  width: 30em;
+}
+
+.contactSection .ContactContentFormTitle label {
+  font-size: 0.5em;
+  color: #fff;
+}
+
+::placeholder {
+  color: #C6BFB9;
+  padding-left: 1em;
+  font-weight: 700;
+}
+
+.contactSection .ContactContentFormTitle .inputSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 30px;
+  background-color: #36f867;
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.contactSection .ContactContentFormTitle form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactSection .ContactContentFormTitle .inputSubmit:hover {
+  background-color: #32d45b;
+  cursor: pointer;
+}
+
+.footerContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .contactSection .ContactContentFormTitle h4 {
+    font-size: 0.5em;
+
+  }
+  .contactSection .ContactContentFormTitle input {
+    width: 20em;
+  }
+  .contactSection .ContactContentFormTitle textarea {
+    width: 20em;
+  }
+  .contactSection .ContactContentFormTitle input[type=submit] {
+    width: 10em;
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1283px) {
+  .chefNameBox {
+    width: 300px;
+    height: 600px;
+  }
+
+  .chefNameBox p {
+    font-size: 0.7em;
+  }
+}
+
+
+@media screen and (max-width: 975px) {
+  .chefNameBox {
+    width: 250px;
+    height: 500px;
+  }
+
+  .chefNameBox p {
+    font-size: 0.5em;
+  }
+
+  .chefNameBox img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:821px) {
+  .chefNameBox {
+    width: 161px;
+    height: 366px;
+  }
+
+  .chefNameBox p {
+    font-size: 0.4em;
+  }
+
+  .chefNameBox img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+
+  .chefNameBox h3 {
+    font-size: 0.8em;
+  }
+
+  .chefNameBox h5 {
+    font-size: 0.6em;
+  }
+
+  .chefPromotionName h1{
+    font-size: 2.5em;
+  }
+}
+
+
+@media screen and (max-width:617px) {
+  .masterChefName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10px;
+    margin-top: 300px;
+  }
+
+  .chefNameBox {
+    border: none;
+  }
+
+  .chefNameBox p {
+    display: none;
+  }
+
+  .chefNameBox img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .chefNameBox h3 {
+    font-size: 0.8em;
+  }
+
+  .chefNameBox h5 {
+    font-size: 0.6em;
+    margin-bottom: 15px;
+  }
+
+  .chefPromotionName h1{
+    font-size: 2em;
+  }
+}
+
+/* .reservationContent p {
+  font-size: 1.5em;
+}
+
+
+.masterChefName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chefNameBox {
+  margin: 20px;
+  margin-bottom: 1em;
+  width: 200px;
+  height: 500px;
+}
+
+.chefNameBox p{
+  font-size: 0.4em;
+} */

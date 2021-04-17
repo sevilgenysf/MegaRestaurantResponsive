@@ -1,0 +1,32 @@
+/* Header Nav Container mobile responsive*/
+
+.headerNavContainer {
+  height: 12vh;
+  padding-top: 10px;
+}
+
+/* Section | Background Image and Content responsive mobil */
+
+.imgContentPromotion h4 {
+  font-size: 2em;
+}
+
+.imgContentPromotion p {
+  text-align: center;
+  font-size: 0.80em;
+  letter-spacing: 1px;
+  padding-bottom: 5em;
+}
+
+/* Section | Rezervation Content responsive mobil*/
+
+.reservationContent p {
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+}
+
+.reservationContent a {
+  font-size: 1em;
+}
+
