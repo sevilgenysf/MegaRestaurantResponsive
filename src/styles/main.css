@@ -136,6 +136,9 @@
 /* aboutme css start part */
 
 .aboutmeSectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: #113C4A;
 }
@@ -183,6 +186,7 @@
   align-items: center;
   text-align: center;
   padding-top: 2em;
+  margin: 1em;
   border-radius: 1em;
   border-style: solid;
   border-color: #0BC0E8;
@@ -316,16 +320,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
   cursor: pointer;
 }
 
-.footerContainer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: #fff;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 @media screen and (max-width: 700px) {
   .contactSection .ContactContentFormTitle h4 {
@@ -402,6 +397,10 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
 
 @media screen and (max-width:617px) {
+  .chefPromotionName h1 {
+    margin-bottom: 2em;
+  }
+
   .masterChefName {
     display: flex;
     flex-direction: column;
@@ -434,6 +433,11 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
   .chefPromotionName h1{
     font-size: 2em;
+  }
+  .aboutmeSectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
