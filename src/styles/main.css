@@ -320,6 +320,39 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
   cursor: pointer;
 }
 
+.footer {
+  bottom: 0;
+  position: absolute;
+	width: 100%;
+	background-color: #1d4f5f;
+	color: white;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer .footer-contact {
+	padding: 20px;
+}
+
+.footer .footer-contact .footer-contact-heading {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.footer .footer-contact .footer-contact-info {
+	font-size: 1rem;
+	padding-top: 10px;
+	letter-spacing: .2rem;
+}
+
+.footer .footer-social-follow .footer-social-icon a {
+	color: white;
+	font-size: 2rem;
+	margin: .4rem;
+	display: inline-block;
+}
+
 
 
 @media screen and (max-width: 700px) {
